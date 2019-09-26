@@ -33,8 +33,18 @@
             justify-content: space-evenly;
         }
         
+        .choice-holder {
+            width: 300px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding: 1rem 0;
+        }
+        
         #my-score,
-        #system-score {
+        #system-score,
+        #my-choice,
+        #system-choice {
             text-align: center;
         }
         
@@ -58,13 +68,17 @@
             <div id="my-score"></div>
             <div id="system-score"></div>
         </div>
+        <div class="choice-holder">
+            <div id="my-choice"></div>
+            <div id="system-choice"></div>
+        </div>
         <div class="img-holder" id="img-holder">
-            <img src="rock.png" alt="rock" onclick="rock();">
-            <img src="paper.png" alt="paper" onclick="paper();">
-            <img src="scissors.png" alt="scissors" onclick="scissors();">
+            <img src="rock.png" alt="rock" onclick="rock()">
+            <img src="paper.png" alt="paper" onclick="paper()">
+            <img src="scissors.png" alt="scissors" onclick="scissors()">
         </div>
     </div>
-    <script src="app.js "></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
