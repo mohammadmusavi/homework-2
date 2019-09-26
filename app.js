@@ -43,9 +43,5 @@ function paper() {
 
 function scissors() {
     randnumber = Math.floor(Math.random() * 3);
-    if (randnumber == 2) my_score += 1;
-    else
-        system_score += 1;
-    counter += 1;
-    check_result();
+
 }
